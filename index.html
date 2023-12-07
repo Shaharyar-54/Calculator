@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div id="main-sec" class="main-sec" >
+        <div id="result"  class="first-sec" >
+            <div class="cal-header">
+                <h2><i class='bx bxs-calculator'></i>Calculator</h2>
+                <input type="text" id="input" >
+            </div>
+        </div>
+        
+        <div id="second-sec" class="second-sec">
+          
+            <table id="table-sec" class="table-sec">
+            
+                <tr>
+            
+                  <td ><button class="design-1" onclick="clr()">C</button></td>
+                  <td><button class="design-1" onclick="toggleSign()" >+/-</button></td>
+                  <td><button class="design-1" onclick="view('%')">%</button></td>
+                  <td><button class="design-1" onclick="view('÷')">÷</button></td>
+                </tr>
+                <tr>
+                  <td><button class="design-3" onclick="view('7')">7</button></td>
+                  <td><button class="design-3" onclick="view('8')">8</button></td>
+                  <td><button class="design-3" onclick="view('9')">9</button></td>
+                  <td><button class="design-1" onclick="view('x')">x</button></td>
+                </tr>
+                <tr>
+                    <td><button class="design-3" onclick="view('4')">4</button></td>
+                    <td><button class="design-3" onclick="view('5')">5</button></td>
+                    <td><button class="design-3" onclick="view('6')">6</button></td>
+                    <td><button class="design-1" onclick="view('-')">-</button></td>
+                  </tr>
+                  <tr>
+                    <td><button class="design-3" onclick="view('1')">1</button></td>
+                    <td><button class="design-3" onclick="view('2')">2</button></td>
+                    <td><button class="design-3" onclick="view('3')">3</button></td>
+                    <td><button class="design-1" onclick="view('+')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td><button class="design-3" onclick="removeLastCharacter()">⌧</button></td>
+                    <td><button class="design-3" onclick="view('0')">0</button></td>
+                    <td><button class="design-3" onclick="view('.')">.</button></td>
+                    <td><button class="design-2" onclick="compute()">=</button></td>
+                  </tr>
+              </table>
+             
+
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
